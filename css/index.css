@@ -1,0 +1,524 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Styles for general elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --textGold: #dd9219;
+    --textBlueBold: #0160A3;
+    --backgroundBlue: #31A2BC;
+    --whiteGeneral: white;
+}
+
+main {
+    margin-top: 70px;
+
+}
+
+/* First section: h1, reference image, and form */
+.sectionOne {
+    background-image: url(../img/ALASKA.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.titleH1 {
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--whiteGeneral);
+}
+
+.spanOne {
+    padding: 0 24px;
+    line-height: 1;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--whiteGeneral);
+}
+
+.textH1 {
+    color: var(--textGold);
+    font-size: 70px;
+    font-weight: 600;
+    padding: 15px 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textSectionTwo {
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+    line-height: 0.9;
+    padding-top: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Form styles */
+
+.containFatherForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 70px;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background-color: var(--whiteGeneral);
+    padding: 27px;
+    border-radius: 1rem;
+    width: 90%;
+    color: var(--textBlueBold);
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+.containerRemember {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerButtonLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.LoginForm {
+    padding-bottom: 16px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.labelForm {
+    padding: 10px 0;
+}
+
+/* Styles for input, buttons, and link */
+
+.inputForm {
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 0.8rem;
+    height: 50px;
+    padding: 0 0 0 20px;
+    width: 100%;
+}
+
+.inputForm:focus {
+    outline-color: var(--textGold);
+}
+
+.buttonLogin,
+.buttonBook,
+.buttonGetAfree {
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--textGold);
+    color: var(--whiteGeneral);
+    border-radius: 0.4rem;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.register {
+    text-decoration: none;
+    color: var(--textBlueBold);
+    padding: 15px 0 0;
+}
+
+/* Second section: h2, step-by-step images */
+
+.contaFatheSectionTwo {
+    background-image: url(../img/medio_circulo_.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.containerH2 {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--textBlueBold);
+    font-weight: 900;
+}
+
+.titleH2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+}
+
+.textH2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.containerDescription {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.containImgDescrip {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgStepbyStep {
+    height: 130px;
+    width: 130px;
+}
+
+.containListFather {
+    display: flex;
+}
+
+.containList {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.StepbyStep {
+    text-align: center;
+    font-size: 20px;
+    color: var(--textBlueBold);
+    font-weight: 600;
+}
+
+.numberDescription {
+    font-size: 50px;
+}
+
+.containButtonBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+/* third section cardServices */
+
+
+.containerFatherCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 1rem;
+}
+
+.contaFatherSectionThree {
+    background: linear-gradient(to left, hsl(205.28deg 95.21% 32.75%), hsl(190.22deg 100% 35.69%)), url(../img/circulo_grande.png);
+}
+
+
+.containFatherThree {
+    text-align: center;
+    color: var(--whiteGeneral);
+    font-weight: 600;
+
+}
+
+.textSectionThree {
+    color: var(--textGold);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 15px 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textSectionTwo {
+    font-size: 60px;
+    line-height: 0.9;
+    font-weight: 800;
+}
+
+.cardContainer {
+    background-color: var(--whiteGeneral);
+    border-radius: 1rem;
+    padding: 45px;
+    box-shadow: 0px 0px 12px -5px black;
+    width: 22rem;
+}
+
+.cardImgH3 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 18px;
+}
+
+.IconsCard {
+    height: 100px;
+    width: auto;
+}
+
+.textH3Card {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--textBlueBold);
+}
+
+.textCard {
+    text-align: left;
+    color: var(--textBlueBold);
+}
+
+.containFatherButtonGet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containButtoGet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonGetAfree {
+    margin: 40px 0 20px;
+    height: 2.5rem;
+    width: 10rem;
+}
+
+/* Fourth section, comments */
+
+.contaFatheSectionFour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.tittleComments {
+    font-size: 45px;
+    color: var(--textBlueBold);
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+
+    .titleH1 {
+        font-size: 80px;
+    }
+
+    .containFatherForm {
+        margin: 0 20%;
+    }
+
+    .spanOne {
+        font-size: 40px;
+    }
+
+    .textH1 {
+        font-size: 60px;
+    }
+
+    .titleH2 {
+        font-size: 70px;
+    }
+
+    .textH2 {
+        font-size: 25px;
+    }
+
+    .containImgDescrip {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .imgStepbyStep {
+        height: 190px;
+        width: 190px;
+    }
+
+    .StepbyStep {
+        font-size: 25px;
+    }
+
+    .containList {
+        flex-direction: row;
+    }
+
+    .containerDescription {
+        flex-direction: column;
+    }
+
+    .textSectionTwo {
+        font-size: 80px;
+    }
+
+    .textSectionThree {
+        font-size: 45px;
+    }
+
+    .tittleComments {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 1900px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        max-width: 1900px;
+        margin-top: 84px;
+    }
+
+    .titleH1 {
+        font-size: 90px;
+        padding: 9px 30px 0;
+    }
+
+    .spanOne {
+        font-size: 30px;
+    }
+
+    .textH1 {
+        font-size: 70px;
+    }
+
+    .sectionOne {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .containFatherForm {
+        margin: 0;
+        padding: 30px 0 26px;
+    }
+
+    .containFatherH1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formLogin {
+        width: 400px;
+    }
+
+    .flexContainer {
+        width: 100%;
+    }
+
+    .inputForm {
+        font-size: 17px;
+    }
+
+    .contaFatheSectionTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerDescription {
+        width: 70%;
+    }
+
+    .titleH2 {
+        font-size:70px;
+    }
+
+    .textH2 {
+        font-size: 30px;
+    }
+
+    .containImgDescrip {
+        justify-content: space-around;
+    }
+
+    .imgStepbyStep {
+        height: 200px;
+        width: 200px;
+    }
+
+    .StepbyStep {
+        font-size: 22px;
+    }
+
+    .buttonBook {
+        font-size: 22px;
+    }
+
+    .containerFatherCard {
+        margin: 0 14%;
+    }
+    .cardContainer{
+    padding: 25px;
+    width: 20rem;
+    }
+
+    .textCard {
+        font-size: 16px;
+    }
+
+    .textH3Card {
+        font-size: 19px;
+        padding-left: 10px;
+    }
+
+    .textSectionTwo {
+        font-size: 100px;
+    }
+
+    .textSectionThree {
+        padding: 28px 28%;
+    }
+
+    .tittleComments {
+        font-size: 70px;
+        color: var(--textBlueBold);
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .contaFatheSectionFour {
+        background:
+            url(../img/circles.webp) no-repeat top right;
+        background-size: 170px;
+    }
+
+
+}

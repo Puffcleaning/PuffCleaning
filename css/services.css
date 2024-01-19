@@ -1,0 +1,433 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Styles for general elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --textGold: #dd9219;
+    --textBlueBold: #0160A3;
+    --backgroundBlue: #31A2BC;
+    --whiteGeneral: white;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.imgLogo {
+    height: 250px;
+    width: 250px;
+}
+
+.carousel {
+    background-color: rgb(91, 91, 91);
+}
+
+.sectionTwoGeneral {
+    background-color: var(--textBlueBold);
+}
+
+.containH1Se {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.titleH1Se {
+    color: var(--whiteGeneral);
+    font-size: 75px;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textH1Se {
+    color: var(--whiteGeneral);
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.imgMenSe {
+    display: none;
+}
+
+.sectionTwoGeneral {
+    margin: 0 0 40px;
+}
+
+.containFatherSe {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cardGeneral,
+.cardImgGeneral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cardGeneral {
+    margin-bottom: 70px;
+}
+
+.ImgBox {
+    border: 10px solid var(--textBlueBold);
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+.titleCard {
+    font-size: 25px;
+    color: var(--textBlueBold);
+    font-weight: 900;
+    padding: 15px 0;
+}
+
+.textCard {
+    text-align: center;
+    padding: 10px 22px;
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+    font-weight: 300;
+}
+
+.buttonGetSe {
+    height: 2.5rem;
+    width: 10rem;
+    font-weight: 600;
+    color: var(--whiteGeneral);
+    background-color: var(--textGold);
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.containSectionOur,
+.containFatherOur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 173, 173);
+    gap: 50px;
+
+}
+
+.containFatherOur {
+    margin-bottom: 40px;
+}
+
+.titleCustomers {
+    padding: 40px 0px 0px;
+    font-size: 40px;
+    color: var(--whiteGeneral);
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.logoOur {
+    height: auto;
+    width: 200px;
+}
+
+.titleInPuff {
+    padding: 120px 10px 20px;
+    font-size: 60px;
+    color: var(--textGold);
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.containFatherInPuff,
+.containInPuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgInPuff {
+    height: 160px;
+    width: auto;
+}
+
+.textImgInPuff {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0 84px;
+    background: linear-gradient(to right, #009cb9, #0460a4);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.containLet {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/BURBU.png) no-repeat bottom left / 110px;
+    background-color: var(--textGold);
+}
+
+.textLet {
+    padding: 45px 13px 20px;
+    font-size: 34px;
+    text-align: center;
+    color: var(--whiteGeneral);
+}
+
+.buttonLet {
+    height: 3rem;
+    width: 12rem;
+    font-weight: 600;
+    color: var(--textGold);
+    background-color: var(--whiteGeneral);
+    border: none;
+    border-radius: 0.8rem;
+    margin: 30px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buttonLet:hover {
+    color: var(--textBlueBold);
+}
+
+@media screen and (min-width: 768px) {
+    .titleH1Se {
+        font-size: 92px;
+    }
+
+    .textH1Se {
+        font-size: 24px;
+    }
+
+    .textLet {
+        padding: 45px 80px 20px;
+    }
+
+    .imgMenSe {
+        height: auto;
+        width: 300px;
+        display: block;
+    }
+
+    .sectionTwoGeneral {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--textBlueBold);
+    }
+
+    .containH1Se {
+        padding: 50px 0;
+    }
+
+    .titleCard {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .cardGeneral {
+        margin-bottom: 0;
+    }
+
+    .containFatherSe {
+        gap: 0;
+        justify-content: center;
+        row-gap: 70px;
+        grid-template-columns: repeat(2, 350px);
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+
+    .ImgBox {
+        width: 300px;
+        height: 300px;
+        border: 18px solid var(--textBlueBold);
+    }
+
+    .box4 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .box8 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .containFatherOur {
+        flex-direction: row;
+    }
+
+    .containFatherInPuff {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .textImgInPuff {
+        padding: 0;
+    }
+
+    .containLet {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        max-width: 1900px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        max-width: 1900px;
+ 
+    }
+
+    .titleH1Se {
+        font-size: 100px;
+    }
+
+    .textH1Se {
+        font-size: 28px;
+    }
+
+    .imgMenSe {
+        width: 450px;
+    }
+
+    .containFatherSe {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .box1,
+    .box3 {
+        background: url(../img/circles.webp) no-repeat bottom right;
+        background-size: 108px;
+    }
+
+    .box5 {
+        background: url(../img/circles.webp) no-repeat top right;
+        background-size: 108px;
+    }
+
+    .box7 {
+        background: url(../img/circles.webp) no-repeat top left;
+        background-size: 108px;
+    }
+
+    .ImgBox {
+        width: 350px;
+        height: 350px;
+    }
+
+    .titleCard {
+        font-size: 30px;
+    }
+
+    .textCard {
+        font-size: 21px;
+    }
+
+    .buttonGetSe {
+        height: 3rem;
+        width: 10rem;
+        font-size: 23px;
+    }
+
+    .logoOur {
+        width: 200px;
+    }
+
+    .containFatherOur {
+        justify-content: space-evenly;
+    }
+
+    .sectionInPuff {
+        background: url(../img/circles.webp) no-repeat top right;
+        background-size: 212px;
+    }
+
+    .titleInPuff {
+        font-size: 70px;
+    }
+
+    .imgInPuff {
+        height: 160px;
+    }
+
+    .textImgInPuff {
+        font-size: 22px;
+    }
+
+    .containLet {
+        background:
+            url(../img/BURBU.png) no-repeat top left / 80px,
+            url(../img/BURBU.png) no-repeat bottom right / 80px;
+        background-color: var(--textGold);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .textLet {
+        font-size: 30px;
+        padding: 5% 0;
+    }
+
+    .buttonLet {
+        height: 3rem;
+        width: 12rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        .sectionTwoGeneral {
+            margin: 53px 0 40px;
+        }
+        .containFatherSe {
+            grid-template-columns: repeat(2, 40%);
+        }
+
+        .titleCard {
+            font-size: 35px;
+        }
+
+        .textCard {
+            font-size: 24px;
+        }
+
+        .containLet {
+            background-size: 145px;
+        }
+
+        .box1,
+        .box3,
+        .box7,
+        .box5 {
+            background-size: 138px;
+        }
+    }
+}

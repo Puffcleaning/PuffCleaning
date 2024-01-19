@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puff Cleaning</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttonGQ.css">
+</head>
+
+<body>
+    <div class="containerBtnFixed">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.facebook.com/puffcleaningholding" class="icon" target="_blank"><i class="iconsBTG bi-facebook"></i></a>
+            <a href="https://www.instagram.com/puffcleaning" class="icon" target="_blank"><i class="iconsBTG bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/puffcleaning" class="icon" target="_blank"><i class="iconsBTG bi-linkedin"></i></a>
+            <a href="get_quote.html" class="icon"><i class="iconsBTG bi-calculator"></i></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas"><i class="icon-mas2 bi-plus-lg"></i></label>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Here we will find the header with the dropdown menu. -->
+
+        <header class="menuNav">
+            <div class="fatherHeader">
+                <a href="index.html">
+                    <img class="LogoHeader" src="./img/PUFF2.webp" alt="LogoHeader">
+                </a>
+            </div>
+            <button class="openMenu" id="open"><i class="bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="closeMenu" id="close"><i class="bi-x"></i></button>
+                <ul class="navList">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="work_with_us.html">WORK WITH US</a></li>
+                    <li><a href="#">INTRANET</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <a href="get_quote.html"><button class="buttonGQNav">GET QUOTE !</button></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Section One Form register -->
+
+        <section class="sectionFatherFormRe">
+
+            <div class="containFatherFormRe">
+                <div class="containWelcomeRe">
+                    <p class="titleWeRe">WELCOME</p>
+                    <p class="textWeRe">Welcome to Puff Cleaning! Fill out our form to get in touch with us. If you
+                        already have an account, log in! Thank you for choosing us!</p>
+                        <a href="index.html"><button  class="btnSN">SIGN IN</button></a>
+
+
+                </div>
+                <form class="containFormRe" action="/procesar_formulario" method="post" enctype="multipart/form-data"
+                    onsubmit="return validateForm()">
+                    <div>
+                        <h1 class="titleH1Re">CREATE YOUR ACCOUNT</h1>
+                        <p class="textH1Re">Join us! Create your account today.</p>
+                    </div>
+
+                    <div class="containInputSe">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input class="inputFormRe" type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="containInputSe">
+                        <i class="bi bi-lock-fill"></i>
+                        <input class="inputFormRe" type="password" id="password" name="password" placeholder="Password"
+                            required>
+                    </div>
+
+                    <div class="containInputSe">
+                        <i class="bi bi-check-square-fill"></i>
+                        <input class="inputFormRe" type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Confirm Password" oninput="validatePassword()" required>
+                        <div>
+                            <span id="confirmError" class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <p class="textAlreadry">Already a member? <a href="index.html" class="loginRe">Login</a></p>
+
+                    <p class="textAuto">By providing any information, you confirm that you have read and accepted the
+                        Terms of Service of Puff Cleaning & Repair. Additionally, you grant consent for our affiliates
+                        and their networks to send marketing and other materials using the provided information.</p>
+
+                    <div class="containButtosRe">
+                        <input class="buttonOneRe" type="submit" value="REGISTER">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+<!-- Footer-->
+
+<footer class="containFooter">
+    <div class="containFatherFooter">
+        <div>
+            <a href="index.html">
+                <img class="logoFooter" src="./img/Logo_Blanco_Vertical.png" alt="logoFooter">
+            </a>
+        </div>
+        <div class="containSocial">
+            <a href="https://www.facebook.com/puffcleaningholding" target="_blank"><i class="footerIconRedes bi-facebook"></i></a>
+            <a href="https://www.instagram.com/puffcleaning" target="_blank"><i class="footerIconRedes bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/puffcleaning" target="_blank"><i class="footerIconRedes bi-linkedin"></i></a>
+        </div>
+    
+        <div class="containerFatherInfo">
+            <div class="containInfoEmail">
+                <i class="bi-envelope"></i>
+                <a href="mailto:info@alaska.puffcleaning.com?subject=Book Now" class="mailto-link">
+                    <p class="textEmail">info@alaska.puffcleaning.com</p>
+                </a>
+            </div>
+            <div class="containInfoLocation">
+                <i class="bi-geo-alt-fill"></i>
+                <p class="textLocation">1395 Alaska, suite 321</p>
+            </div>
+            <div class="containInfoPhone">
+                <i class="bi-telephone-fill"></i>
+                <a href="tel:+1 305 999 8545" class="tel-link">
+                    <p class="textPhone">+1 305 999 8545</p>
+                </a>
+            </div>
+        </div>
+        <div class="containerCopy">
+            <p class="copyRight">Copyright 2024 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+</html>

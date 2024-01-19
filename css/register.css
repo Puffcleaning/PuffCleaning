@@ -1,0 +1,272 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Styles for general elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --textGold: #dd9219;
+    --textBlueBold: #0160A3;
+    --backgroundBlue: #31A2BC;
+    --whiteGeneral: white;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.containFatherFormRe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.containWelcomeRe {
+    background:
+        url(../img/BURBU.png) no-repeat right bottom,
+        url(../img/BURBU.png) no-repeat left top;
+    background-size: 150px;
+    color: var(--whiteGeneral);
+    background-color: var(--textGold);
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+.containFormRe {
+    border-radius: 1rem;
+    padding: 20px;
+}
+
+.titleWeRe {
+    font-weight: 900;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.textWeRe {
+    padding: 30px 0 50px;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.btnSN{
+    height: 2rem;
+    width: 7rem;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    color: var(--textBlueBold);
+    cursor: pointer;
+}
+
+.btnSN:hover{
+transition : 1000ms;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+
+
+
+
+.titleH1Re {
+    font-size: 40px;
+    color: var(--textGold);
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.textH1Re {
+    padding: 15px 0;
+    color: var(--textBlueBold);
+    font-size: 20px;
+    text-align: center;
+}
+
+.containInputSe {
+    position: relative;
+}
+
+.bi-envelope-fill,
+.bi-lock-fill,
+.bi-check-square-fill {
+    color: var(--textGold);
+    position: absolute;
+    top: calc(50%);
+    left: 15px;
+}
+
+.inputFormRe {
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 0.8rem;
+    height: 30px;
+    padding: 25px 0 25px 40px;
+    width: 100%;
+    margin-top: 20px;
+    color: var(--textBlueBold);
+}
+
+.inputFormRe:focus {
+    outline-color: var(--textGold);
+}
+
+.textAlreadry {
+    color: var(--textBlueBold);
+    text-align: center;
+    padding: 10px 0 20px;
+    font-weight: 600;
+}
+
+.textAuto {
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.loginRe {
+    color: var(--textGold);
+}
+
+.containButtosRe {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonOneRe {
+    height: 3rem;
+    width: 7rem;
+    background-color: var(--textGold);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.buttonOneRe:hover,
+.buttonTwoRe:hover {
+    background-color: var(--textBlueBold);
+}
+
+@media screen and (min-width: 768px) {
+
+    .containWelcomeRe,
+    .containFormRe {
+        height: 615px;
+        width: 50%;
+    }
+
+    .containWelcomeRe {
+        border-radius: 1rem 0 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containFatherFormRe {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sectionFatherFormRe {
+        margin: 94px 7px 26px;
+    }
+
+    .containFormRe {
+        border: 0.5px solid rgb(222, 222, 222);
+        border-radius: 0 1rem 1rem 0;
+        padding: 25px;
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 1900px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        max-width: 1900px;
+        margin-top: 5px;
+    }
+
+    .containWelcomeRe,
+    .containFormRe {
+        height: 720px;
+        width: 50%;
+    }
+
+    .titleWeRe {
+        font-size: 80px;
+    }
+
+    .titleH1Re {
+        font-size: 50px;
+    }
+
+    .textH1Re {
+        font-size: 26px;
+    }
+
+    .containFormH1 {
+        width: 400px;
+    }
+
+    .inputFormRe {
+        padding: 35px 0 35px 41px;
+        width: 100%;
+        font-size: 19px;
+    }
+
+    .bi-envelope-fill,
+    .bi-lock-fill,
+    .bi-check-square-fill {
+        font-size: 21px;
+    }
+
+    .textAlreadry {
+        font-size: 23px;
+        padding: 28px 0;
+
+    }
+
+    .buttonOneRe {
+        width: 8rem;
+        font-size: 20px;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    main{
+        margin-top: 50px;
+    }
+
+    .containWelcomeRe,
+    .containFormRe {
+        height: 696px;
+        width: 40%;
+    }
+}

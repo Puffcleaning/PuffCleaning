@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puff Cleaning</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttonGQ.css">
+
+</head>
+
+<body>
+    <div class="containerBtnFixed">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.facebook.com/puffcleaningholding" class="icon" target="_blank"><i class="iconsBTG bi-facebook"></i></a>
+            <a href="https://www.instagram.com/puffcleaning" class="icon" target="_blank"><i class="iconsBTG bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/puffcleaning" class="icon" target="_blank"><i class="iconsBTG bi-linkedin"></i></a>
+            <a href="get_quote.html" class="icon"><i class="iconsBTG bi-calculator"></i></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas"><i class="icon-mas2 bi-plus-lg"></i></label>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Here we will find the header with the dropdown menu. -->
+
+        <header class="menuNav">
+            <div class="fatherHeader">
+                <a href="index.html">
+                    <img class="LogoHeader" src="./img/PUFF2.webp" alt="LogoHeader">
+                </a>
+            </div>
+            <button class="openMenu" id="open"><i class="bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="closeMenu" id="close"><i class="bi-x"></i></button>
+                <ul class="navList">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="work_with_us.html">WORK WITH US</a></li>
+                    <li><a href="#">INTRANET</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <a href="get_quote.html"><button class="buttonGQNav">GET QUOTE !</button></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- First section h1, reference images and form -->
+
+        <section class="sectionOne">
+            <div class="containFatherForm">
+                <div class="flexContainer">
+                    <div class="containFatherH1">
+                        <h1 class="titleH1">WELCOME</h1>
+                        <p class="spanOne"> TO PUFF CLEANING & REPAIR</p>
+                        <p class="textH1">ALASKA</p>
+                    </div>
+                </div>
+                <form class="formLogin" action="/procesar_formulario" method="post" enctype="multipart/form-data">
+                    <p class="LoginForm">LOGIN</p>
+
+                    <label class="labelForm" for="e-mail">User name or E-mail:</label>
+                    <input class="inputForm" type="email" id="e-mail" name="e-mail" required>
+
+                    <label class="labelForm" for="password">Password:</label>
+                    <input class="inputForm" type="password" id="password" name="password" required>
+
+                    <div class="containerRemember">
+                        <label class="labelForm" for="remember">Remember me</label>
+                        <input type="checkbox" id="remember" name="remember">
+                    </div>
+
+                    <div class="containerButtonLogin">
+
+                        <button class="buttonLogin">LOGIN</button>
+                        <a class="register" href="register.html" target="_blank">
+                            <p>Register</p>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- second section h2, step by step images -->
+
+        <section class="contaFatheSectionTwo">
+            <div class="containerH2">
+                <h2 class="titleH2">CLICK&CLEAN</h2>
+                <P class="textH2">PROCESS TO ACQUIRE YOUR SERVICE</P>
+            </div>
+            <div class="containerDescription">
+                <div class="containImgDescrip">
+                    <img class="imgStepbyStep" src="./img/PASO1.webp" alt="imgStepbyStep">
+                    <img class="imgStepbyStep" src="./img/PASO2-8.webp" alt="imgStepbyStep">
+                    <img class="imgStepbyStep" src="./img/PASO3-8.png" alt="imgStepbyStep">
+                </div>
+                <div class="containListFather">
+                    <ol class="containList">
+                        <ul class="StepbyStep"><span class="numberDescription">1.</span>CHOOSE SERVICE</ul>
+                        <ul class="StepbyStep"><span class="numberDescription">2.</span>RESERVATION</ul>
+                        <ul class="StepbyStep"><span class="numberDescription">3.</span>PUFF CLEAN</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="containButtonBook">
+                <button class="buttonBook">BOOK NOW</button>
+            </div>
+        </section>
+
+        <!-- third section cardServices -->
+
+        <section class="contaFatherSectionThree">
+            <div class="containFatherThree">
+                <h2 class="textSectionTwo">SERVICES</h2>
+                <h2 class="textSectionThree">FOR HOME AND BUSINESS</h2>
+            </div>
+            <div class="containerFatherCard ">
+                <div class="cardContainer">
+                    <div class="cardImgH3">
+                        <img class="IconsCard" src="./img/limpieza.png">
+                        <h3 class="textH3Card">Household<br>Cleaning Services:</h3>
+                    </div>
+                    <p class="textCard">Experience a sparkling home with our meticulous cleaning services, leaving every
+                        nook and cranny flawlessly clean We will be more than happy to help.</p>
+                    <div class="containButtoGet">
+                        <button class="buttonGetAfree">Get Service</button>
+                    </div>
+
+                </div>
+                <div class="cardContainer">
+                    <div class="cardImgH3">
+                        <img class="IconsCard" src="./img/casa.png">
+                        <h3 class="textH3Card">Airbnb<br>Cleaning Service:</h3>
+                    </div>
+                    <p class="textCard">Elevate your property's appeal with our top-tier cleaning service, ensuring a
+                        welcoming and spotless environment for your guests.</p>
+                    <div class="containButtoGet">
+                        <button class="buttonGetAfree">Get Service</button>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="cardImgH3">
+                        <img class="IconsCard" src="./img/fabrica.png">
+                        <h3 class="textH3Card">Commercial<br>Cleaning:</h3>
+                    </div>
+                    <p class="textCard">Maintain a professional image with our commercial cleaning, ensuring your
+                        business facilities are consistently clean and inviting.</p>
+                    <div class="containButtoGet">
+                        <button class="buttonGetAfree">Get Service</button>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="cardImgH3">
+                        <img class="IconsCard" src="./img/Industrial.png">
+                        <h3 class="textH3Card">Industrial<br>Cleaning:</h3>
+                    </div>
+                    <p class="textCard">Tailored to meet diverse industrial needs, our comprehensive cleaning service
+                        guarantees a pristine and safe workspace.</p>
+                    <div class="containButtoGet">
+                        <button class="buttonGetAfree">Get Service</button>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="cardImgH3">
+                        <img class="IconsCard" src="./img/obrero.png">
+                        <h3 class="textH3Card">Post<br>Construction:</h3>
+                    </div>
+                    <p class="textCard">Transform newly constructed or renovated spaces with our expert
+                        post-construction cleaning, turning chaos into order.</p>
+                    <div class="containButtoGet">
+                        <button class="buttonGetAfree">Get Service</button>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="cardImgH3">
+                        <img class="IconsCard" src="./img/repair.png">
+                        <h3 class="textH3Card">Repair<br>Service:</h3>
+                    </div>
+                    <p class="textCard">Beyond cleaning, we offer repair services, including painting, maintenance, and
+                        electrical repairs, to keep your property in top shape.</p>
+                    <div class="containButtoGet">
+                        <button class="buttonGetAfree">Get Service</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fourth section, comments -->
+
+        <section class="contaFatheSectionFour">
+            <div class="containSectionFour">
+                <h3 class="tittleComments">HEAR FROM<br>OUR CLIENTES</h3>
+            </div>
+        </section>
+        <script src="https://widget.trustmary.com/1ldiqdB9w"></script>
+    </main>
+
+</body>
+
+<!-- Footer-->
+
+<footer class="containFooter">
+    <div class="containFatherFooter">
+        <div>
+            <a href="index.html">
+                <img class="logoFooter" src="./img/Logo_Blanco_Vertical.png" alt="logoFooter">
+            </a>
+        </div>
+        <div class="containSocial">
+            <a href="https://www.facebook.com/puffcleaningholding" target="_blank"><i class="footerIconRedes bi-facebook"></i></a>
+            <a href="https://www.instagram.com/puffcleaning" target="_blank"><i class="footerIconRedes bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/puffcleaning" target="_blank"><i class="footerIconRedes bi-linkedin"></i></a>
+        </div>
+    
+        <div class="containerFatherInfo">
+            <div class="containInfoEmail">
+                <i class="bi-envelope"></i>
+                <a href="mailto:info@alaska.puffcleaning.com?subject=Book Now" class="mailto-link">
+                    <p class="textEmail">info@alaska.puffcleaning.com</p>
+                </a>
+            </div>
+            <div class="containInfoLocation">
+                <i class="bi-geo-alt-fill"></i>
+                <p class="textLocation">1395 Alaska, suite 321</p>
+            </div>
+            <div class="containInfoPhone">
+                <i class="bi-telephone-fill"></i>
+                <a href="tel:+1 305 999 8545" class="tel-link">
+                    <p class="textPhone">+1 305 999 8545</p>
+                </a>
+            </div>
+        </div>
+        <div class="containerCopy">
+            <p class="copyRight">Copyright 2024 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,306 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --textGold: #dd9219;
+  --textBlueBold: #0160A3;
+  --backgroundBlue: #31A2BC;
+  --whiteGeneral: white;
+}
+
+.containH1Us {
+  padding-top: 40px;
+}
+
+.titleUS {
+  padding: 0 10px;
+  font-size: 40px;
+  color: var(--textGold);
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.textUS {
+  padding: 15px;
+  color: var(--textBlueBold);
+  font-size: 20px;
+  text-align: center;
+}
+
+.containMenUS {
+  display: flex;
+  justify-content: center;
+}
+
+.men_us_cel {
+  height: auto;
+  width: 350px;
+}
+
+.men_us_Pc {
+  display: none;
+}
+
+.containFatherFormUS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containFormUS {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 13px;
+  box-shadow: 0px 0px 1px 0px black;
+  border-radius: 1rem;
+  background-color: var(--textBlueBold);
+  color: var(--textBlueBold);
+  margin-bottom: 60px;
+}
+
+.labelFormUS {
+  color: var(--whiteGeneral);
+  margin: 5px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.inputFormUS,
+.inputFormUSAttach {
+  border: 1px solid rgb(190, 188, 188);
+  border-radius: 0.8rem;
+  height: 50px;
+  width: 340px;
+  padding: 0px 0 0 15px;
+}
+
+.inputFormUS:focus {
+  outline-color: var(--textGold);
+}
+
+.custom-file-upload {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  padding: 4px 5px;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.IconAtta {
+  font-size: 25px;
+}
+
+.containButtosUS {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonOneUS,
+.buttonTwoUS {
+  height: 3rem;
+  width: 6rem;
+  background-color: var(--textGold);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.buttonOneUS:hover,
+.buttonTwoUS:hover {
+  color: var(--textBlueBold);
+}
+
+.titleWhyUs {
+  font-size: 40px;
+  color: var(--textBlueBold);
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 50px 0 20px;
+}
+
+.accordion {
+  padding: 20px 15px 40px;
+}
+
+.accordion-button {
+  color: var(--textBlueBold);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (min-width:768px) {
+
+  .titleUS {
+    padding: 0 15%;
+    font-size: 50px;
+  }
+
+  .textUS {
+    padding: 15px 20%;
+  }
+
+  .containMenForm {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+  }
+
+  .containMenUS {
+    width: 300px;
+  }
+
+  .men_us_cel {
+    display: none;
+  }
+
+  .men_us_Pc {
+    display: flex;
+    width: 121%;
+  }
+
+  .titleWhyUs {
+    border-top: 35px solid var(--textGold);
+    padding: 50px 19% 15px;
+  }
+
+  .sectionAccordion {
+    background: url(../img/circles.webp) no-repeat top left / 200px;
+  }
+
+  .accordion {
+    padding: 20px 10% 30px;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  header {
+    max-width: 1900px;
+  }
+  body, main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    max-width: 1900px;
+    margin-top: 70px;
+  }
+
+  .titleUS {
+    font-size: 80px;
+    padding: 0 10%;
+  }
+
+  .textUS {
+    font-size: 30px;
+    padding: 21px 27%;
+  }
+
+  .containFormUS {
+    width: 520px;
+    padding: 32px 30px 48px;
+  }
+
+  .containMenForm {
+    gap: 48px;
+  }
+
+  .men_us_Pc {
+    width: 152%;
+  }
+
+  .labelFormUS {
+    font-size: 23px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .inputFormUS,
+  .inputFormUSAttach {
+    width: 100%;
+  }
+
+  .custom-file-upload {
+    font-size: 23px;
+    height: 42px;
+  }
+
+  .buttonOneUS,
+  .buttonTwoUS {
+    height: 3rem;
+    width: 9rem;
+    font-size: 25px;
+  }
+
+  .accordion-button {
+    font-size: 21px;
+  }
+
+  .textStrongUs {
+    font-size: 17px;
+  }
+
+  .accordion {
+    padding: 20px 22% 100px;
+  }
+
+  .sectionAccordion {
+    width: 100%;
+    background:
+      url(../img/circles.webp) no-repeat bottom right;
+    background-size: 233px;
+  }
+
+  .titleWhyUs {
+    font-size: 50px;
+    border-top: 35px solid var(--textGold);
+    padding: 43px 24% 15px;
+  }
+
+}
+
+@media screen and (min-width:1440px){
+
+  .sectionAccordion{
+    width: 1440px;
+  }
+
+  .titleUS{
+    padding: 0 0;
+  } 
+  .textUS{
+    padding: 21px 26%;
+  }
+  .titleWhyUs{
+    padding: 43px 19% 15px;
+  }
+  .accordion-button{
+    font-size: 30px;
+  } 
+
+  .textStrongUs{
+    font-size: 23px;
+  }
+
+}

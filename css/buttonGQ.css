@@ -1,0 +1,113 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Styles for general elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --textGold: #dd9219;
+    --textBlueBold: #0160A3;
+    --backgroundBlue: #31A2BC;
+    --whiteGeneral: white;
+}
+
+
+
+.iconsBTG {
+    font-size: 30px;
+    color: var(--textBlueBold);
+}
+
+#btn-mas {
+    display: none;
+}
+
+.containerBtnFixed {
+    position: fixed;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a,
+.icon-mas2 {
+    display: block;
+    text-decoration: none;
+    background-color: var(--whiteGeneral);
+    color: var(--whiteGeneral);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+.icon-mas2{
+    background-color: var(--textGold);
+}
+.prueba{
+    color: var(black);
+}
+
+.redes a:hover {
+    background-color: var(--textGold);
+    color: var(--textBlueBold);
+
+}
+
+.redes a {
+    margin: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~.redes a {
+    margin-bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-mas2 { 
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#btn-mas:checked~.btn-mas .icon-mas2 {
+    transform: rotate(90deg);
+    font-size: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .redes a,
+    .icon-mas2 {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+    }
+    .iconsBTG{
+        font-size:30px ;
+
+    }
+
+    .icon-mas2{
+        font-size: 20px;
+    }
+    #btn-mas:checked~.btn-mas .icon-mas2 {
+        transform: rotate(90deg);
+        font-size: 40px;
+    }
+
+}

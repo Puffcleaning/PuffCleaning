@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puff Cleaning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/buttonGQ.css">
+    <link rel="stylesheet" href="css/work_with_us.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="containerBtnFixed">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.facebook.com/puffcleaningholding" class="icon" target="_blank"><i class="iconsBTG bi-facebook"></i></a>
+            <a href="https://www.instagram.com/puffcleaning" class="icon" target="_blank"><i class="iconsBTG bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/puffcleaning" class="icon" target="_blank"><i class="iconsBTG bi-linkedin"></i></a>
+            <a href="get_quote.html" class="icon"><i class="iconsBTG bi-calculator"></i></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas"><i class="icon-mas2 bi-plus-lg"></i></label>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Here we will find the header with the dropdown menu. -->
+
+        <header class="menuNav">
+            <div class="fatherHeader">
+                <a href="index.html">
+                    <img class="LogoHeader" src="./img/PUFF2.webp" alt="LogoHeader">
+                </a>
+            </div>
+            <button class="openMenu" id="open"><i class="bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="closeMenu" id="close"><i class="bi-x"></i></button>
+                <ul class="navList">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="work_with_us.html">WORK WITH US</a></li>
+                    <li><a href="#">INTRANET</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <a href="get_quote.html"><button class="buttonGQNav">GET QUOTE !</button></a>
+                </ul>
+            </nav>
+        </header>
+        <section class="containH1Us">
+            <h1 class="titleUS">WANT TO BE PART OF OUR TEAM ?</h1>
+            <p class="textUS">If you want to be part of our team, leave us
+                your data and the position you would like
+                to apply for. </p>
+        </section>
+        <section class="containMenForm">
+            <div class="containMenUS">
+                <img class="men_us_cel" src="./img/men_us.webp" alt="men_us_cel">
+                <img class="men_us_Pc" src="./img/men_us_pc.webp" alt="men_us_Pc">
+            </div>
+            <div class="containerSectionFormUS">
+                <div class="containFatherFormUS">
+                    <form class="containFormUS" action="/procesar_formulario" method="post"
+                        enctype="multipart/form-data">
+
+                        <label class="labelFormUS" for="name">Name:</label>
+                        <input class="inputFormUS" type="text" id="name" name="name" oninput="validateText(this)"
+                            required><br>
+
+                        <label class="labelFormUS" for="phone">Phone:</label>
+                        <input class="inputFormUS" type="text" id="phone" name="phone" required><br>
+
+                        <label class="labelFormUS" for="email">Email:</label>
+                        <input class="inputFormUS" type="email" id="email" name="email" required><br>
+
+                        <label class="labelFormUS" for="attached">Please attach your CV:<i
+                                class="IconAtta bi-paperclip"></i></label>
+                        <input class="inputFormUS custom-file-upload" type="file" id="attached" name="attached"
+                            accept=".pdf, .doc, .docx, .jpg, .png"><br>
+
+                        <div class="containButtosUS">
+                            <input class="buttonOneUS" type="submit" value="SUBMIT" onclick="">
+                            <input class="buttonTwoUS" type="reset" value="RESET">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="sectionAccordion">
+            <h2 class="titleWhyUs">BENEFITS OF BEING PART OF PUFF</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Seamless Work Transition for You
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p class="textStrongUs">Join Puff Cleaning & Repair, where we understand the unique
+                                journey of migrant women from Latin America. With multiple franchises across the U.S.,
+                                our cleaning staff, predominantly consisting of migrant women, enjoys the flexibility to
+                                choose locations that suit them best, facilitating a smooth transition into the
+                                workforce.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Empowering Your Career Journey
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="textStrongUs"> At Puff Cleaning & Repair, we recognize the potential within every individual. Our
+                                commitment goes beyond a job — it's about fostering careers. Specifically catering to
+                                migrant women, we provide opportunities to ascend into administrative roles, empowering
+                                you to grow professionally within our expanding company.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Tech-Driven Opportunities at Puff
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="textStrongUs">
+                                Puff Cleaning & Repair pioneers digital cleaning, offering opportunities for migrant women
+                                in an inclusive workplace. As the first all-digital cleaning company in the U.S., we're
+                                committed to supporting career growth. Embrace tech-driven opportunities and transition
+                                seamlessly into administrative roles through our upcoming application. Our website provides
+                                a comprehensive platform for efficient service management. Our well-managed cleaning staff
+                                delivers top-notch residential, corporate, and commercial cleaning services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- Footer-->
+
+<footer class="containFooter">
+    <div class="containFatherFooter">
+        <div>
+            <a href="index.html">
+                <img class="logoFooter" src="./img/Logo_Blanco_Vertical.png" alt="logoFooter">
+            </a>
+        </div>
+        <div class="containSocial">
+            <a href="https://www.facebook.com/puffcleaningholding" target="_blank"><i class="footerIconRedes bi-facebook"></i></a>
+            <a href="https://www.instagram.com/puffcleaning" target="_blank"><i class="footerIconRedes bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/puffcleaning" target="_blank"><i class="footerIconRedes bi-linkedin"></i></a>
+        </div>
+    
+        <div class="containerFatherInfo">
+            <div class="containInfoEmail">
+                <i class="bi-envelope"></i>
+                <a href="mailto:info@alaska.puffcleaning.com?subject=Book Now" class="mailto-link">
+                    <p class="textEmail">info@alaska.puffcleaning.com</p>
+                </a>
+            </div>
+            <div class="containInfoLocation">
+                <i class="bi-geo-alt-fill"></i>
+                <p class="textLocation">1395 Alaska, suite 321</p>
+            </div>
+            <div class="containInfoPhone">
+                <i class="bi-telephone-fill"></i>
+                <a href="tel:+1 305 999 8545" class="tel-link">
+                    <p class="textPhone">+1 305 999 8545</p>
+                </a>
+            </div>
+        </div>
+        <div class="containerCopy">
+            <p class="copyRight">Copyright 2024 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</html>
